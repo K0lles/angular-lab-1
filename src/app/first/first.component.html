@@ -1,0 +1,12 @@
+<div class="inner-container">
+  <div class="container" style="margin-top: 10px;">
+    <div class="row">
+      <ng-container>
+        <app-product [ngClass]="{'col-sm-4': true,
+                                 'text-center': true}"
+                     *ngFor="let product of productsData" [product]="product">
+        </app-product>
+      </ng-container>
+    </div>
+  </div>
+</div>

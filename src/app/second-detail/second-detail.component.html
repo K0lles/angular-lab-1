@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="inner-container">
+    <ul>
+      <li>{{ user.lastname }} {{ user.name }}</li>
+      <li>{{ user.dateOfBirth | date:'d.MM.y' }}</li>
+      <li>{{ user.salary | currency }}</li>
+      <li>{{ user.workingHours | numberPipe }}</li>
+    </ul>
+    <a routerLink="/second">на головну</a>
+  </div>
+</div>

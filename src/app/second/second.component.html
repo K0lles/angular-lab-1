@@ -1,0 +1,5 @@
+<div class="container">
+  <ul *ngFor="let user of users">
+    <li routerLink="/second/{{user.id}}">Сторінка {{user.lastname}} {{user.name}}</li>
+  </ul>
+</div>
